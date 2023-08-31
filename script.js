@@ -74,7 +74,7 @@ class Calculator {
     buttons = document.querySelectorAll("button");
     especialCaractere = ["%", "*", "/", "+", "-", "="]; 
     maxCaractere = 15; 
-    maxResultadoCaractere = 12; 
+    maxResultadoCaractere = 15; 
     output = ""; // Variável para armazenar a expressão sendo digitada
     historico = []; // Array para armazenar o histórico de cálculos
 
