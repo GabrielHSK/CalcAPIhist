@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0e3eb;
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    background: #fff;
+    left: 0%;
+    top: 2%;
+    text-align: left;
+    padding: 10px 20px;
+}
+h1::first-letter{
+    color: orangered;
+    font-size: 54px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container {
+    position: absolute;
+    max-width: 300px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 70px 20px 20px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+    left: 25%
+}
+.display{
+    height: 80px;
+    width: 100%;
+    outline: none;
+    border: none;
+    margin-bottom: 10px;
+    font-size: 25px;
+    text-align: right;
+    color: #000e1a;
+    pointer-events: none;
+}
+.buttons{
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+.buttons button{
+    padding: 10px;
+    border-radius: 6px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #eee;
+}
+.buttons button:active{
+    transform: scale(0.99);
+}
+.operador {
+    color: orangered;
+}
+.historico {
+    position: absolute;
+    background-color: aqua;
+    top: 50%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    border-radius: 12px;
+    padding: 15px;
+    margin: 8px;
+}
+table{
+    width: 350px;
+    position: absolute;
+    background-color:  #fff;
+    top: 17%;
+    left: 55%;
+    padding: 8px;
+    border-collapse: collapse;
+    border-radius: 12px;
+}
+tr.cabecalho{
+    top: 25%;
+    left: 70%;
+    border-radius: 12px;
+    padding-left: 188px;
+    border-collapse: collapse;
+    text-align: center;
+    border-radius: 12px;
+}
+td{
+    padding: 10px;
+    border-radius: 12px;
+    padding-left: 8px;
+    justify-content: center;   
+}
+th.data{
+    padding: 8px;
+    vertical-align: middle;
+    margin-left: 8px;
+    justify-content: center;
+    position: relative;
+    padding-left: 8px;
+}
+th::first-letter{
+    color: orangered;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+tr.res{
+    left: 5px;
+    justify-content: center;
+    position: relative;
+}
